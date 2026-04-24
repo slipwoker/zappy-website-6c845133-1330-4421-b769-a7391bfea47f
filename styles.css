@@ -139,7 +139,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --primary: #16A8C7;
+--primary: #16A8C7;
   --secondary: #343A40;
   --accent: #C9D3DA;
   --bg-light: #FAFBFC;
@@ -150,7 +150,7 @@
   --border-light: #D9E2E8;
   --border-dark: #4A5259;
   --nav-bg: transparent;
-  --nav-text: #1E242B;
+  --nav-text: #ffffff;
   --nav-text-hover: #16A8C7;
 
   --radius-sm: 4px;
@@ -179,6 +179,7 @@
   --gradient-overlay-dark: linear-gradient(90deg, rgba(255,255,255,0.86) 0%, rgba(255,255,255,0.72) 28%, rgba(255,255,255,0.16) 62%, rgba(255,255,255,0) 100%);
   --gradient-light-section: linear-gradient(180deg, #FFFFFF 0%, #F3F6F8 100%);
   --gradient-overlay-light: linear-gradient(180deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.82) 100%);
+  --nav-overlay-opacity: 0.35;
 }
 
 *,
@@ -832,7 +833,7 @@ pre {
 /* Navbar Styles */
 :root {
   --nav-bg: transparent;
-  --nav-text: #1E242B;
+  --nav-text: #ffffff;
   --nav-text-hover: #16A8C7;
   --primary: #16A8C7;
   --secondary: #343A40;
@@ -1122,7 +1123,7 @@ pre {
 }
 :root {
   --nav-bg: transparent;
-  --nav-text: #1E242B;
+  --nav-text: #ffffff;
   --nav-text-hover: #16A8C7;
   --primary: #16A8C7;
   --secondary: #343A40;
@@ -7591,13 +7592,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 }
 
 
-/* Logo size constraint - enforce max-height only */
-.logo, img.logo, .logo img, .logo-link img, .nav-brand img {
-  max-height: 40px !important;
-  height: auto !important;
-  width: auto !important;
-  object-fit: contain !important;
-}
+
 
 
 /* Hide WhatsApp float button on desktop (mobile-only) */
@@ -7838,8 +7833,8 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 /* END MOBILE RESPONSIVE FIXES */
 
 /* === NAVBAR STYLE OVERRIDES START === */
-.navbar { background-color: transparent !important; background-image: linear-gradient(to bottom, rgba(0,0,0,var(--nav-overlay-opacity,0.35)), transparent) !important; transition: background-color 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease !important; }
-.zappy-catalog-menu, #zappy-catalog-menu { background-image: linear-gradient(to bottom, rgba(0,0,0,var(--nav-overlay-opacity,0.35)), transparent) !important; transition: background 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;}
+.navbar { background-color: transparent !important; background-image: linear-gradient(to bottom, rgba(0,0,0,var(--nav-overlay-opacity, 0.35)), transparent) !important; transition: background-color 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease !important; }
+.zappy-catalog-menu, #zappy-catalog-menu { background-image: linear-gradient(to bottom, rgba(0,0,0,var(--nav-overlay-opacity, 0.35)), transparent) !important; transition: background 0.3s ease, background-image 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease !important;}
 .navbar .nav-menu > li > a,
 .navbar .nav-menu > .nav-item > a,
 .navbar .nav-link,
@@ -7915,9 +7910,9 @@ nav.navbar .sub-menu li a:hover { color: #16A8C7 !important; background-color: r
   .navbar:not(.scrolled) .sub-menu a:hover,
   .navbar:not(.scrolled) .sub-menu li a:hover { color: var(--nav-text-hover, var(--accent)) !important; }
 }
-.navbar.scrolled { background-color: rgba(52,58,64,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important; }
+.navbar.scrolled { background-color: rgba(250,251,252,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; box-shadow: 0 2px 16px rgba(0,0,0,0.12) !important; }
 .navbar.scrolled::before, .navbar.scrolled::after { background: transparent !important; opacity: 0 !important; }
-.navbar.scrolled ~ .zappy-catalog-menu, .navbar.scrolled ~ #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { background: rgba(52,58,64,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; }
+.navbar.scrolled ~ .zappy-catalog-menu, .navbar.scrolled ~ #zappy-catalog-menu, .zappy-catalog-menu.scrolled, #zappy-catalog-menu.scrolled { background: rgba(250,251,252,0.85) !important; background-image: none !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important; }
 .zappy-catalog-menu.scrolled .catalog-menu-item,
 .zappy-catalog-menu.scrolled .catalog-menu-all,
 #zappy-catalog-menu.scrolled .catalog-menu-item,
@@ -7925,7 +7920,7 @@ nav.navbar .sub-menu li a:hover { color: #16A8C7 !important; background-color: r
 .navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item,
 .navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all,
 .navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item,
-.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all { color: var(--frosted-text, #FAFBFC) !important; }
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all { color: var(--frosted-text, #1E242B) !important; }
 .zappy-catalog-menu.scrolled .catalog-menu-item:hover,
 .zappy-catalog-menu.scrolled .catalog-menu-all:hover,
 #zappy-catalog-menu.scrolled .catalog-menu-item:hover,
@@ -7937,20 +7932,20 @@ nav.navbar .sub-menu li a:hover { color: #16A8C7 !important; background-color: r
 .navbar.scrolled .nav-menu > li > a,
 .navbar.scrolled .nav-menu > .nav-item > a,
 .navbar.scrolled .nav-link,
-.navbar.scrolled a:not(.nav-cta-btn) { color: var(--frosted-text, #FAFBFC) !important; }
+.navbar.scrolled a:not(.nav-cta-btn) { color: var(--frosted-text, #1E242B) !important; }
 .navbar.scrolled .nav-menu > li > a:hover,
 .navbar.scrolled .nav-menu > .nav-item > a:hover,
 .navbar.scrolled .nav-link:hover,
 .navbar.scrolled a:not(.nav-cta-btn):hover { color: var(--nav-text-hover, var(--accent)) !important; }
-.navbar.scrolled .navbar-brand, .navbar.scrolled .navbar-brand a { color: var(--frosted-text, #FAFBFC) !important; }
-.navbar.scrolled .dropdown-toggle { color: var(--frosted-text, #FAFBFC) !important; }
-.navbar.scrolled .mobile-hamburger-btn, .navbar.scrolled .mobile-close-btn { color: var(--frosted-text, #FAFBFC) !important; }
-.navbar.scrolled .phone-header-btn { color: var(--frosted-text, #FAFBFC) !important; }
-.navbar.scrolled .mobile-toggle { color: var(--frosted-text, #FAFBFC) !important; }
+.navbar.scrolled .navbar-brand, .navbar.scrolled .navbar-brand a { color: var(--frosted-text, #1E242B) !important; }
+.navbar.scrolled .dropdown-toggle { color: var(--frosted-text, #1E242B) !important; }
+.navbar.scrolled .mobile-hamburger-btn, .navbar.scrolled .mobile-close-btn { color: var(--frosted-text, #1E242B) !important; }
+.navbar.scrolled .phone-header-btn { color: var(--frosted-text, #1E242B) !important; }
+.navbar.scrolled .mobile-toggle { color: var(--frosted-text, #1E242B) !important; }
 .navbar.scrolled .mobile-toggle svg { color: inherit !important; }
 .navbar.scrolled .mobile-toggle svg path { stroke: currentColor !important; }
-.navbar.scrolled .nav-search-btn { color: var(--frosted-text, #FAFBFC) !important; }
-.navbar.scrolled .nav-search-btn svg { stroke: var(--frosted-text, #FAFBFC) !important; fill: none !important; }
+.navbar.scrolled .nav-search-btn { color: var(--frosted-text, #1E242B) !important; }
+.navbar.scrolled .nav-search-btn svg { stroke: var(--frosted-text, #1E242B) !important; fill: none !important; }
 @media (min-width: 769px) {
   .navbar.scrolled .sub-menu,
   .navbar.scrolled ul.sub-menu,
@@ -12554,6 +12549,21 @@ body.accessibility-widget-visible ._access-menu {
     display: none !important;
   }
 }
+/* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
+@media (min-width: 769px) {
+  .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
+    max-height: none !important;
+    height: 52px !important;
+    max-width: 206px !important;
+    width: auto !important;
+    object-fit: contain !important;
+  }
+  .nav-container {
+    min-height: 82px !important;
+  }
+}
+/* /Zappy custom logo size */
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
