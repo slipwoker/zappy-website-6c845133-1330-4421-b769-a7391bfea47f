@@ -1,0 +1,59 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+גלו את עתיד הניידות המסחרית עם ACDC MOTORS. ליסינג והשכרה יומית, שבועית וחודשית לרכבים מסחריים חשמליים והיברידיים לעסקים. הצטרפו למהפכה הירוקה עוד היום!
+
+### פתרונות לצי רכב
+https://example.com/solutions
+פתרונות ליסינג והשכרה מותאמים אישית לצי רכב מסחרי חשמלי והיברידי. בחרו בין השכרה יומית, שבועית או חודשית וקבלו יעילות תפעולית מקסימלית עם פחמן מינימלי. גלו את הפתרון הנכון לעסקכם!
+
+### אודות ACDC Motors
+https://example.com/about
+ACDC MOTORS היא חברת הליסינג וההשכרה המובילה בתחום הרכב המסחרי החשמלי וההיברידי. למדו כיצד אנו מניעים עסקים קדימה תוך שמירה על הסביבה ומחויבות לחדשנות בתחבורה בת-קיימא.
+
+### צור קשר
+https://example.com/contact
+רוצים לשדרג את צי הרכב העסקי שלכם לרכבים חשמליים או היברידיים? צוות המומחים של ACDC MOTORS כאן לענות על כל שאלה בנושא ליסינג והשכרת רכב מסחרי. צרו קשר עכשיו ונבנה יחד את הפתרון המושלם!
+
+### Products
+https://example.com/products
+המוצרים שלנו - ACDC MOTORS
+
+### Product Detail
+https://example.com/product/:slug
+פרטי המוצר - ACDC MOTORS
+
+### Category
+https://example.com/category/:slug
+מוצרים - ACDC MOTORS
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
