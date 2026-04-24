@@ -2738,17 +2738,16 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   align-items: center;
 }
 
-/* ── Frosted Card ── */
 .index-hero-section .index-hero-card {
   position: relative;
   width: 100%;
-  max-width: 520px;
+  max-width: 400px;
   background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(201, 211, 218, 0.55);
   border-radius: 8px;
-  padding: 40px 36px 36px;
+  padding: 28px 24px 24px;
   box-shadow: 0 14px 36px rgba(24, 42, 58, 0.14);
   color: var(--text-dark);
   text-align: right;
