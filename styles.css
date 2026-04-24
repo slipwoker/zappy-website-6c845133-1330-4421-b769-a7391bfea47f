@@ -3365,23 +3365,24 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 
 .index-benefits-section .index-benefits-img-badge {
   position: absolute;
-  top: 24px;
-  inset-inline-start: 24px;
+  top: 16px;
+  inset-inline-start: auto;
   background: rgba(22, 168, 199, 0.92);
   backdrop-filter: blur(8px);
-  border-radius: 8px;
-  padding: 14px 18px;
+  border-radius: 6px;
+  padding: 8px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
   z-index: 5;
   box-shadow: 0 8px 24px rgba(22, 168, 199, 0.28);
+  inset-inline-end: 16px;
 }
 
 .index-benefits-section .index-benefits-badge-number {
   font-family: 'Rubik', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 800;
   color: #FFFFFF;
   line-height: 1;
@@ -3389,7 +3390,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
 
 .index-benefits-section .index-benefits-badge-label {
   font-family: 'Rubik', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.4;
