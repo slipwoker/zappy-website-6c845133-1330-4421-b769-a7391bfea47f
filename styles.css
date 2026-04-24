@@ -12553,21 +12553,28 @@ body.accessibility-widget-visible ._access-menu {
 
 
 
+
+
 /* Zappy custom logo size (desktop only — mobile stays at 110px/35px) */
 @media (min-width: 769px) {
   .logo, img.logo, .logo img, .logo-link img, .nav-brand img {
     max-height: none !important;
-    height: 54px !important;
-    max-width: 218px !important;
+    height: 52px !important;
+    max-width: 208px !important;
     width: auto !important;
     object-fit: contain !important;
   }
   .nav-container {
-    min-height: 84px !important;
+    min-height: 82px !important;
   }
 }
 /* /Zappy custom logo size */
 
+
+.index-hero-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
